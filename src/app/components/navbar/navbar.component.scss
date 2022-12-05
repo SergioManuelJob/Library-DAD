@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   background-color: #2C3333; 
+}
+
+img{
+    width: 5em;
+}
+
+button{
+    font-size:16px;
+    font-weight: bold;
+    background-color: #A5C9CA;
+    border: none;
+    border-radius: 0.5em;
+    margin-right:1.5em;
+    padding:1em;
+    padding-left:2em;
+    padding-right:2em;
+}
