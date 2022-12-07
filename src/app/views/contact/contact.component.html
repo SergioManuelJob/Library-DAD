@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<app-navbar></app-navbar>
+<div id="title">
+    <h1>Contáctanos.</h1>
+</div>
+
+<form (ngSubmit)="onSubmit()" [formGroup]="contact">
+    <h2>Manda un comentario.</h2>
+
+    <input
+    formControlName="email" 
+    placeholder="Email">
+    <textarea 
+    formControlName="message" 
+    placeholder="Mensaje..."></textarea>
+    <button type="submit" [disabled]="contact.invalid">Enviar</button>
+</form>

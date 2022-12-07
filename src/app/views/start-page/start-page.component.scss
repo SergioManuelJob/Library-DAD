@@ -1,15 +1,81 @@
-#bookContainer{
+body{
+    background-color: #E7F6F2;
+    height: 100vh;
+    font-family: Arial;
+}
+
+#containerTitle{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
-#searchBar{
+#navbar{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    background-color:#2C3333;
+    width: 100vw;
+    height: 10%;
 }
 
-h1{
-    margin-top: 1em;
+#navbar img{
+    height: 100%;
+}
+
+#footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100vw;
+    justify-content: center;
+    background-color:#2C3333;
+    height: 11%;    
+}
+
+#version{
+    color: white;
+    margin-top:0.3em;
+}
+
+#title{
+    margin-top: 20%;
+}
+
+#enter{
+    background-color: #395B64;
+    border: none;
+    font-size: 28px;
+    color: white;
+    border-radius: 15px;
+    padding:20px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin-top: 15%;
+}
+
+.bloques{
+    margin-top:30%;
+    width:50%;
+    display: inline-block;
+}
+
+.bloques button{
+    background-color: #395B64;
+    border: none;   
+    margin-left:15%;
+    margin-right:15%;
+    border-radius: 15px;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+.bloques button img{
+    width:60%;
+    height: auto;
+}
+.bloques h2{
+    margin-left: 17%;
 }

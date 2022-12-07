@@ -1,0 +1,50 @@
+#title{
+    margin-top: 10%;
+    margin-bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height:63vh;
+    background-color: #2C3333; 
+    padding: 1em;
+}
+
+form h2{
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+form input{
+    background-color: white;    
+    border: none;
+    width: 90%;    
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 2em;
+}
+
+form textarea{
+    padding: 0.5em;
+    height: 60%;
+    border-radius: 0.5em;
+}
+
+form button{
+    width: 25vw;
+    align-self: center;
+    font-size:16px;
+    font-weight: bold;
+    background-color: #A5C9CA;
+    border: none;
+    border-radius: 0.5em;
+    margin:1em;
+    padding:1em;
+    padding-left:1em;
+    padding-right:1em;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  control = new FormControl();
+
+  observerChangeSearch(){
+    this.control.valueChanges.subscribe(query => {
+      console.log(query)
+    })
+  }
 
 }

@@ -1,1 +1,22 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+
+<div id="searchBar">
+    <input type="text" placeholder="Buscador..." [formControl]="control">
+</div>
+
+<div id="bookContainer">
+
+    <h1>Novedades.</h1>
+
+        <app-book-card image="../../assets/images/libro1.jpg"></app-book-card>
+        <app-book-card image="../../assets/images/libro2.jpg"></app-book-card>
+        <app-book-card image="../../assets/images/libro3.png"></app-book-card>
+
+    <h1>Para ti.</h1>
+
+        <app-book-card image="../../assets/images/libro4.jpg"></app-book-card>
+        <app-book-card image="../../assets/images/libro5.jpeg"></app-book-card>
+        
+</div>
+
+<app-contact-bar></app-contact-bar>

@@ -1,21 +1,29 @@
-<app-navbar></app-navbar>
+<body>
+    <div id="navbar"><img src = "../../assets/images/logo.png"></div>
 
-<div id="searchBar">
-    <input type="text" placeholder="Buscador..." [formControl]="control">
-</div>
+    <div id="containerTitle">
 
-<div id="bookContainer">
+        <h1 id="title">Librería de Ejemplo</h1>
+    
+        <button id="enter" routerLink="/home">Entrar</button>
+    
+    </div>
+    
+    <div>
 
-    <h1>Novedades.</h1>
+        <div class="bloques">
+        <h2>Ubicación</h2>
+        <button><img src="../../assets/images/maps.png"></button>
+        </div>
+    
+        <div class="bloques">
+        <h2>Contacto</h2>
+        <button><img src="../../assets/images/gmail.png"></button>
+        </div>
+    </div>
 
-        <app-book-card image="../../assets/images/libro1.jpg"></app-book-card>
-        <app-book-card image="../../assets/images/libro2.jpg"></app-book-card>
-        <app-book-card image="../../assets/images/libro3.png"></app-book-card>
 
-    <h1>Para ti.</h1>
-
-        <app-book-card image="../../assets/images/libro4.jpg"></app-book-card>
-        <app-book-card image="../../assets/images/libro5.jpeg"></app-book-card>
-</div>
-
-<app-contact-bar></app-contact-bar>
+    <div id="footer">
+      <h1 id="version">Versión 0.1</h1>
+    </div>
+  </body>
