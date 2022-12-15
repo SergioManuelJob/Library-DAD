@@ -1,2 +1,14 @@
 <app-navbar></app-navbar>
+<div>
+<form (ngSubmit)="onSubmit()" [formGroup]="logIn">
+    <h2>Iniciar sesión</h2>
+    <input
+    formControlName="email" 
+    placeholder="Email">
+    <input
+    formControlName="password" 
+    placeholder="password...">
+    <button type="submit" [disabled]="logIn.invalid">Entrar</button>
+</form>
+</div>
 <app-contact-bar></app-contact-bar>

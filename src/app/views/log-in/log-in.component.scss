@@ -1,0 +1,43 @@
+div{}
+form{
+    display: flex;
+    position: absolute;
+    margin-top: 15vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    height: 45vh;
+    background-color: #2C3333; 
+}
+
+form h2{
+    align-self: flex-start;
+    color: white;
+    margin: 1em;
+    padding-top: 0.5em;
+}
+
+form input{
+    background-color: white;    
+    border: none;
+    width: 80%;    
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin:1em;
+}
+
+form button{
+    width: 25vw;
+    align-self: center;
+    font-size:16px;
+    font-weight: bold;
+    background-color: #A5C9CA;
+    border: none;
+    border-radius: 1em;
+    margin:1em;
+    padding:1em;
+    padding-left:1em;
+    padding-right:1em;
+}

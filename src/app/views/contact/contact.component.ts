@@ -19,6 +19,7 @@ export class ContactComponent {
   }
 
   onSubmit(){
+    alert("Form sent!")
     this.router.navigateByUrl("/home")
   }
 

@@ -1,16 +1,17 @@
 <app-navbar></app-navbar>
 <div id="title">
     <h1>Contáctanos.</h1>
+    <form (ngSubmit)="onSubmit()" [formGroup]="contact">
+        <h2>Manda un comentario.</h2>
+    
+        <input
+        formControlName="email" 
+        placeholder="Email">
+        <textarea 
+        formControlName="message" 
+        placeholder="Mensaje..."></textarea>
+        <button type="submit" [disabled]="contact.invalid">Enviar</button>
+    </form>
 </div>
 
-<form (ngSubmit)="onSubmit()" [formGroup]="contact">
-    <h2>Manda un comentario.</h2>
 
-    <input
-    formControlName="email" 
-    placeholder="Email">
-    <textarea 
-    formControlName="message" 
-    placeholder="Mensaje..."></textarea>
-    <button type="submit" [disabled]="contact.invalid">Enviar</button>
-</form>
