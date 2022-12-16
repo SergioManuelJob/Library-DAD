@@ -1,6 +1,13 @@
 <app-navbar></app-navbar>
-<div>
+<div id="userInformation">
     <img src="../../../assets/images/userLogged.png">
     <p>email@email.com</p>
+</div>
+
+<div id="informationContainer">
+    <h2>Guardados.</h2>
+    <div *ngFor = "let p of products">
+        <app-product-card-saved image="{{p.image}}"></app-product-card-saved>
+    </div>
 </div>
 

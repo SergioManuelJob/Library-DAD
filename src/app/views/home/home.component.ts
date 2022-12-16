@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Product } from 'src/app/models/product';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,32 @@ import { FormControl } from '@angular/forms';
 })
 export class HomeComponent {
 
-  control = new FormControl();
+  products: Product[];
+  public search: string = '';
 
-  observerChangeSearch(){
-    this.control.valueChanges.subscribe(query => {
-      console.log(query)
-    })
+  constructor(){
+    this.products = [
+      {
+        title: "El Señor de los Anillos",
+        image: "../../assets/images/libro1.jpg"
+      },
+      {
+        title: "El Último Dickens",
+        image: "../../assets/images/libro2.jpg"
+      },
+      {
+        title: "Heridas Abiertas",
+        image: "../../assets/images/libro3.png"
+      },
+      {
+        title: "El Drama de Maylen",
+        image: "../../assets/images/libro4.jpg"
+      },
+      {
+        title: "Heridas Abiertas",
+        image: "../../assets/images/libro5.jpeg"
+      },
+    ]
   }
 
 }

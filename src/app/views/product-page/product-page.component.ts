@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProductPageComponent {
 
+  
+
+  makeAReservation(){
+    alert("Product has been reserved succesfully!")
+  }
+
 }

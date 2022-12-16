@@ -13,6 +13,9 @@ import { ContactBarComponent } from './components/contact-bar/contact-bar.compon
 import { BookCardComponent } from './components/book-card/book-card.component';
 import { ProductPageComponent } from './views/product-page/product-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ContactBarHomeComponent } from './components/contact-bar-home/contact-bar-home.component';
+import { ProductCardSavedComponent } from './components/product-card-saved/product-card-saved.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +28,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     ContactBarComponent,
     BookCardComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    ContactBarHomeComponent,
+    ProductCardSavedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
